@@ -40,6 +40,7 @@ public class RainbowColorWheelTest extends OpMode {
 
             for (int i=0; i < colors.length; i++) {
                 int hue = ((redStart + i) * hueGap) % 360;
+
                 int color = Color.HSVToColor(new float[] { hue, 1, 1 });
                 colors[i] = color;
             }
